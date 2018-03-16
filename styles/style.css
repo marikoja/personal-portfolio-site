@@ -1,0 +1,99 @@
+/* page outline */
+.site-container {
+  display: grid;
+  grid-template:
+    "header header header"
+    "about about about"
+    "portfolio code-journal code-journal"
+    "portfolio blog blog"
+    "footer footer footer";
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000
+}
+/* header & nav bar */
+.header {
+  position: fixed;
+  overflow: hidden;
+  background-color: #FFF;
+  top: 0;
+  margin-top: 0;
+  width: 100%;
+  grid-area: header;
+  border: 3px dashed grey;
+
+  display: grid;
+  grid-template-columns: repeat(3 1fr);
+  /* flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center; */
+}
+
+.header nav {
+  grid-column: 2 / span 2;
+}
+.header h1 {
+  margin-left: 5%;
+}
+
+.header nav ul{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.header nav ul li {
+  margin: 5%;
+}
+
+/* about me section */
+.about {
+  grid-area: about;
+  border: 3px dashed grey;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* portfolio section */
+.portfolio-container {
+  grid-area: portfolio;
+  border: 3px dashed grey;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.code-journal-container {
+  grid-area: code-journal;
+  border: 3px dashed grey;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-container {
+  grid-area: blog;
+  border: 3px dashed grey;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  grid-area: footer;
+  border: 3px dashed grey;
+}
