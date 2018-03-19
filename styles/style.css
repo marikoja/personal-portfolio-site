@@ -1,4 +1,6 @@
-/* page outline */
+* {
+  background-color: #F3F9D2;
+}
 .site-container {
   display: grid;
   grid-template:
@@ -7,27 +9,42 @@
     "portfolio code-journal code-journal"
     "portfolio blog blog"
     "footer footer footer";
+    /* background-color: #F3F9D2; */
 }
 
 ul li {
   list-style-type: none;
+  margin: 5%;
 }
 
 a {
   text-decoration: none;
   font-weight: bold;
-  color: #000
+  color: #000;
+  line-height: 1em;
+  padding:10%;
+  margin:3px;
 }
+
+.hover:hover {
+  margin:0px;
+	border: 3px dotted #F3F9D2;
+  border-radius: 10%;
+  padding: 10%;
+	/* color: #3a7999; */
+	background: #CBEAA6;
+}
+
 /* header & nav bar */
 .header {
   position: fixed;
   overflow: hidden;
-  background-color: #FFF;
+  background-color: #CBEAA6;
   top: 0;
   margin-top: 0;
   width: 100%;
   grid-area: header;
-  border: 3px dashed grey;
+  /* border: 3px dashed grey; */
 
   display: grid;
   grid-template-columns: repeat(3 1fr);
@@ -38,62 +55,110 @@ a {
 
 .header nav {
   grid-column: 2 / span 2;
+  background-color: #CBEAA6;
 }
 .header h1 {
   margin-left: 5%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  background-color: #CBEAA6;
 }
 
 .header nav ul{
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  background-color: #CBEAA6;
 }
 
 .header nav ul li {
   margin: 5%;
+  background-color: #CBEAA6;
+  white-space: nowrap;
 }
 
 /* about me section */
 .about {
   grid-area: about;
-  border: 3px dashed grey;
-  padding-top: 100px;
+  /* border: 3px dashed grey; */
+  padding-top: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 5px dotted rgbA(204, 233, 169, 80);
 
 }
 
 /* portfolio section */
 .portfolio-container {
   grid-area: portfolio;
-  border: 3px dashed grey;
+  /* border: 3px dashed grey; */
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  /* margin-bottom: 5%;
+  margin-right: auto%;
+  margin-left: auto%; */
+  padding-right: 5%;
+  border-right: 5px dotted rgbA(204, 233, 169, 80);
+}
 
+.portfolio-container p {
+  text-align: center;
 }
 
 .code-journal-container {
   grid-area: code-journal;
-  border: 3px dashed grey;
+  /* border: 3px dashed grey; */
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  margin-right: 5%;
+  margin-left: 5%;
+  border-bottom: 5px dotted rgbA(204, 233, 169, 80);
+}
+.code-journal-container p {
+  text-align: center;
 }
 
 .blog-container {
   grid-area: blog;
-  border: 3px dashed grey;
+  /* border: 3px dashed grey; */
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
+.blog-container p {
+  text-align: center;
+}
+ /* Footer */
 .footer {
   grid-area: footer;
-  border: 3px dashed grey;
+  /* border: 3px dashed grey; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #CBEAA6;
+}
+
+.footer h3 {
+  background-color: #CBEAA6;
+  /* margin-left: 5%; */
+}
+
+.footer ul{
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: #CBEAA6;
+}
+
+.footer ul li {
+  background-color: #CBEAA6;
 }
