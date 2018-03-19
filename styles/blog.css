@@ -30,14 +30,14 @@
 .blog-nav ul li{
 
   text-align: center;
-display: flex;
+  display: flex;
   margin-bottom: 5%;
   padding: 0;
   justify-content: center;
 }
 
 .blog-nav ul li a{
-
+  font-family: 'Poiret One', cursive;
   text-align: center;
 }
 
@@ -49,7 +49,7 @@ display: flex;
 }
 
 .blog-container h2 {
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
 }
 
 .blog-container h4 {

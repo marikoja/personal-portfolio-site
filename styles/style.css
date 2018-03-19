@@ -1,6 +1,16 @@
 * {
   background-color: #F3F9D2;
 }
+
+h1, h2  {
+  font-family: 'Pacifico', cursive;
+
+}
+
+p, h3, h4, h5, h6 {
+  font-family: 'Poiret One', cursive;
+}
+
 .site-container {
   display: grid;
   grid-template:
@@ -76,6 +86,7 @@ a {
   margin: 5%;
   background-color: #CBEAA6;
   white-space: nowrap;
+  font-family: 'Poiret One', cursive;
 }
 
 /* about me section */
@@ -161,4 +172,5 @@ a {
 
 .footer ul li {
   background-color: #CBEAA6;
+  font-family: 'Poiret One', cursive;
 }
